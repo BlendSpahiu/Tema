@@ -1,0 +1,13 @@
+.gamePrice {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.buyGameImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dialog {
+  height: 600px;
+  overflow-y: scroll;
+}

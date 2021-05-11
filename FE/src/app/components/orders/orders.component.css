@@ -1,0 +1,12 @@
+.orderCells {
+  width: 150px;
+  height: 80px;
+  padding: 5px;
+  text-align: center;
+}
+.alert {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 20px;
+}

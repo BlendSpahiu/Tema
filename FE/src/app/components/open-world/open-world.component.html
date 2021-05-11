@@ -1,0 +1,17 @@
+<div class="content" fxLayout="row wrap" fxLayoutGap = "16px grid">
+  <div fxFlex="25%" fxFlex.xs="100%" *ngFor="let data of data">
+    <mat-card class="mat-elevation-z4">
+      <mat-card-header>
+        <mat-card-title> {{data.title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{data.filePath}}" />
+      <mat-card-content>
+        <p>{{data.description}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+      <button mat-button (click)="openDialog(data.id)">BUY</button>
+      <span style="float: right; margin-top: 8px; margin-right: 8px;">{{data.price | currency}} </span>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

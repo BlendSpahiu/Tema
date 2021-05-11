@@ -1,0 +1,57 @@
+<div class="container dialog">
+<h1 align="center" bold>{{gameDetails.title}}</h1>
+<img class="buyGameImage" src="{{gameDetails.filePath}}">
+<p class="gamePrice" align="center">{{gameDetails.price | currency}}</p>
+<form #contactForm="ngForm">
+
+    <div class="form-group">
+        <label for="firstName">First Name *</label>
+        <input required minlength="3" maxlength="10" ngModel name="firstName" type="text" #firstName="ngModel"
+            class="form-control" id="firstName" placeholder="Enter Your First Name">
+        <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+            <div *ngIf="firstName.errors.required">First Name is required.</div>
+            <div *ngIf="firstName.errors.minlength">First Name is minimum {{ firstName.errors.minlength.requiredLength
+                }} character.</div>
+            <div *ngIf="firstName.errors.maxlength">First Name is maximum 10 character.</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Last Name *</label>
+        <input required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName" placeholder="Enter Your Last Name">
+        <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid" >
+            Last Name is required.
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="cardNumber">Card Number *</label>
+        <input type="text" required ngModel #cardNumber="ngModel" name="cardNumber" id="cardNumber" minlength="16" maxlength="16"
+            class="form-control" placeholder="Enter Your Card Number">
+        <div class="alert alert-danger" *ngIf="cardNumber.touched && !cardNumber.valid">
+            Card Number is required.
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="cardCV">Card CV *</label>
+        <input type="text" required ngModel #cardCV="ngModel" name="cardCV" id="cardCV" minlength="3"
+            maxlength="3" class="form-control" placeholder="Enter Your Card CV">
+        <div class="alert alert-danger" *ngIf="cardCV.touched && !cardCV.valid">
+            Card CV is required.
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="cardExpirationDate">Expiration Date *</label>
+        <input type="month" required ngModel #cardExpirationDate="ngModel" name="cardExpirationDate" id="cardExpirationDate"
+            class="form-control">
+        <div class="alert alert-danger" *ngIf="cardCV.touched && !cardCV.valid">
+            Expiration date is required.
+        </div>
+    </div>
+
+</form>
+
+<button (click)="buy()">Buy</button>
+</div>

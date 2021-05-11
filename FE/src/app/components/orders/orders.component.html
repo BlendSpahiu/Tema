@@ -1,0 +1,16 @@
+<div class="alert alert-primary" role="alert" *ngFor="let order of orders">
+  <table border style="margin: auto;" class="orderTable">
+    <tr>
+      <th rowspan="2" class="orderCellsImage"><img src="{{order.filePath}}" style="width: 100%; height: auto; display: block;">
+      </th>
+      <th class="orderCells">User</th>
+      <th class="orderCells">Game</th>
+      <th class="orderCells">Price</th>
+    </tr>
+    <tr>
+      <td class="orderCells">{{order.username}}</td>
+      <td class="orderCells">{{order.title}}</td>
+      <td class="orderCells">{{order.price | currency}}</td>
+    </tr>
+  </table>
+</div>

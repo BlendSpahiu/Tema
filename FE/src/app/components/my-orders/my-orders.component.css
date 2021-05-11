@@ -1,0 +1,16 @@
+.orderCells {
+  width: 150px;
+  height: 80px;
+  padding: 5px;
+  text-align: center;
+}
+div .alert table .orderCellsImage {
+  width: 150px;
+  height: 80px;
+}
+.alert {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 20px;
+}
