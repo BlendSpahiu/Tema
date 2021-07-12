@@ -32,9 +32,9 @@ export class DialogComponent implements OnInit {
 
         this.orders.postOrder(order).subscribe(() => {
           console.log(order)
-        
+          alert(this.gameDetails.title + " bought successfully!"); 
         });
-          alert(this.gameDetails.title + " bought successfully!");  
+           
           this.dialogRef.close();
     }
   ngOnInit(): void {

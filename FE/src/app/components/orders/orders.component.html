@@ -1,7 +1,8 @@
-<div class="alert alert-primary" role="alert" *ngFor="let order of orders">
-  <table border style="margin: auto;" class="orderTable">
+
+<!-- <div class="alert alert-primary" role="alert" *ngFor="let order of orders">
+  
     <tr>
-      <th rowspan="2" class="orderCellsImage"><img src="{{order.filePath}}" style="width: 100%; height: auto; display: block;">
+      <th class="orderCellsImage"><img src="{{order.filePath}}" style="width: 100%; height: auto; display: block;">
       </th>
       <th class="orderCells">User</th>
       <th class="orderCells">Game</th>
@@ -12,5 +13,25 @@
       <td class="orderCells">{{order.title}}</td>
       <td class="orderCells">{{order.price | currency}}</td>
     </tr>
-  </table>
+  
+</div> -->
+<div class="alert alert-primary" role="alert" *ngFor="let order of orders">
+<div class="container">
+  
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">User</div>
+      <div class="col col-2">Game</div>
+      <div class="col col-3">Price</div>
+      
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">{{order.username}}</div>
+      <div class="col col-2" data-label="Customer Name">{{order.title}}</div>
+      <div class="col col-3" data-label="Amount">{{order.price | currency}}</div>
+      
+    </li>
+  </ul>
 </div>
+</div>
+

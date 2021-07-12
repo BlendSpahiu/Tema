@@ -1,21 +1,4 @@
-.sign-login-links {
-  margin-left: 60rem;
-}
-.userLinks {
-  margin-left: 55rem;
-}
-.modLinks {
-  margin-left: 42rem;
-}
-/* .navbar-nav .username-link {
-  margin-left: 45rem;
-} */
-.navbar-nav .signUp-link {
-  margin-left: 60rem;
-}
-.navbar-nav .username-link {
-  margin-left: 45rem;
-}
+
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 
 body {
@@ -25,7 +8,7 @@ body {
   height: 100 !important;
 }
 
-.container-fluid {
+ .container-fluid {
   overflow: hidden;
   margin-top: 250px;
   background: #262626;
@@ -64,4 +47,12 @@ h3 {
   font-size: calc(
     10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))
   ) !important;
+} 
+.footerLinks {
+  text-decoration: none;
+  color: white;
 }
+
+
+    
+   

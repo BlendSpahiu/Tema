@@ -68,10 +68,11 @@ export class AddGameComponent implements OnInit {
     };
   }
   onSelectFile(event) {
-    this.selectedFile = event.target.files[event.target.files.length - 1] as File;
+    this.selectedFile = event.target.files[event.target.files.length - 1] as File; // type, object of type file
   }
 
   performUpload() {
+    debugger;
     this.formData.set('file', this.selectedFile, this.selectedFile.name);
     this.tutorialService.uploadImage(this.formData).subscribe(
       res => {

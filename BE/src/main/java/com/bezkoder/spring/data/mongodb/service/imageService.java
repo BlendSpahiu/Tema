@@ -16,7 +16,7 @@ import java.nio.file.StandardCopyOption;
 @Service
 public class imageService {
 
-    public final String storageDirectoryPath = "C:\\Users\\Vemax\\Desktop\\photos";
+    public final String storageDirectoryPath = "C:\\Users\\StarTech\\Desktop\\photos";
     public ResponseEntity uploadToLocalFileSystem(MultipartFile file) {
         /* we will extract the file name (with extension) from the given file to store it in our local machine for now
         and later in virtual machine when we'll deploy the project
