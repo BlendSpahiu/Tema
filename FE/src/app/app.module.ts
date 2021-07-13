@@ -19,6 +19,7 @@ import {MatInputModule} from "@angular/material/input";
 import { DialogComponent } from './components/dialog/dialog.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { MyOrdersComponent } from './components/my-orders/my-orders.component';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { MyOrdersComponent } from './components/my-orders/my-orders.component';
     MatToolbarModule,
     MatButtonModule,
     FlexLayoutModule,
-    NgSelectModule
+    NgSelectModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

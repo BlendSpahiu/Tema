@@ -29,7 +29,6 @@
               <a href="/login" class="nav-link " routerLink="login">Login</a>
             </li>
           </ul>
-          </div>
           <ul class="navbar-nav ml-auto " *ngIf="isLoggedIn">
             <li class="nav-item " *ngIf="showModeratorBoard">
               <a routerLink="games" class="nav-link">Manage Games</a>
@@ -50,6 +49,8 @@
               <a href class="nav-link" (click)="logout()">LogOut</a>
             </li>
           </ul>
+          </div>
+          
       </ul>
     </div>
     
