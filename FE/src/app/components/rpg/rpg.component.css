@@ -92,6 +92,7 @@
     overflow-y: auto;
     text-align: justify;
     padding: 5px;
+    scrollbar-width: thin;
   }
   .cards {
     background-color: black;

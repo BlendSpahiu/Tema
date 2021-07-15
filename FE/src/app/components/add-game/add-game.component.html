@@ -1,4 +1,4 @@
-<div style="width: 400px; margin: auto;">
+<div style="width: 500px; margin: auto; background-color: rgb(32, 32, 32); border-radius: 12px;">
   <div class="submit-form">
     <div *ngIf="!submitted">
       <div class="form-group">
@@ -45,18 +45,16 @@
         />
       </div>
       <form>
-        <input type="file" (change)="onSelectFile($event)">
+        <input class="browseButton" type="file" (change)="onSelectFile($event)">
         <br>
         <br>
-        <button  type="button" (click)="performUpload()"><i class="fa fa-upload" aria-hidden="true"></i> Upload</button>
-        <br>
-        <br>
+        <button class="button"  type="button" (click)="performUpload()"><i class="fa fa-upload" aria-hidden="true"></i> Upload</button>
         <div class="alert alert-success" role="alert" *ngIf="isUploaded">
             Image Uploaded Succesfuly
         </div>
-        <br>
+        <button style="margin-bottom: 8%; margin-left: 8%;" (click)="saveTutorial()" class="button">Add Game</button>
       </form>
-      <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+      
     </div>
 
     <div *ngIf="submitted">
