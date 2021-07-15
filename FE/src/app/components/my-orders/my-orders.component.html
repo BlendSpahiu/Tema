@@ -1,16 +1,17 @@
-<div>
 <div class="alert alert-primary" role="alert" *ngFor="let data of data">
-  <table border style="margin: auto;">
-    <tr>
-      <th rowspan="2" class="orderCellsImage"><img src="{{data.filePath}}" style="width: 100%; height: auto; display: block;"></th>
-      <th class="orderCells">Game</th>
-      <th class="orderCells">Price</th>
-    </tr>
-    <tr>
-      <td class="orderCells">{{data.title}}</td>
-      <td class="orderCells">{{data.price | currency}}</td>
-    </tr>
-  </table>
- 
-</div>
-</div>
+  <div class="container">
+    
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-2">Game</div>
+        <div class="col col-3">Price</div>
+        
+      </li>
+      <li class="table-row">
+        <div class="col col-2" data-label="Game Title">{{data.title}}</div>
+        <div class="col col-3" data-label="Price">{{data.price | currency}}</div>
+        
+      </li>
+    </ul>
+  </div>
+  </div>

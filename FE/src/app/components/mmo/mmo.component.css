@@ -62,8 +62,8 @@ body {
   position: relative;
   border-radius: 8px;
   letter-spacing: 0.7px;
-  background-color: none;
-  color: black;
+  background-color: transparent;
+  color: white;
   font-size: 20px;
   font-family: "Lato", sans-serif;
   cursor: pointer;
@@ -88,4 +88,14 @@ mat-card {
 p {
   max-height: 140px;
   overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  padding: 5px;
+}
+.cards {
+  background-color: black;
+  color: white;
+}
+mat-card-title {
+  text-transform: none;
 }
