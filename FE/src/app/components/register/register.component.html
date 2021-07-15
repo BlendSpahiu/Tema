@@ -1,10 +1,10 @@
 <div class="container" fxFlexLayout="row">
   <div class="card card-container" fxFlex="50%" fxFlex.xs="100%" fxFlex.s="100%">
-    <img
+    <!-- <img
       id="profile-img"
       src="https://k2partnering.com/wp-content/uploads/2016/05/Person.jpg"
       class="profile-img-card"
-    />
+    /> -->
     <form
       *ngIf="!isSuccessful"
       name="form"
@@ -16,7 +16,6 @@
         <label class="labels" for="username">Username</label>
         <input
           type="text"
-          placeholder="Enter your Username"
           class="form-control"
           name="username"
           [(ngModel)]="form.username"
@@ -39,7 +38,6 @@
         <label class="labels" for="email">Email</label>
         <input
           type="email"
-          placeholder="Enter your Email"
           class="form-control"
           name="email"
           [(ngModel)]="form.email"
@@ -58,7 +56,6 @@
         <label class="labels" for="password">Password</label>
         <input
           type="password"
-          placeholder="Enter your Password"
           class="form-control"
           name="password"
           [(ngModel)]="form.password"
@@ -80,7 +77,13 @@
       <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
         Signup failed!<br />{{ errorMessage }}
       </div>
+
+    <hr>
     </form>
+    
+    <p style="color: white; font-size: 16px; margin-top: 4%;">Already a member?</p>
+    <a routerLink="/login" style="text-decoration: none; font-size: 16px;">Log in!</a>
+  
 
     <div class="alert alert-success" *ngIf="isSuccessful">
       Your registration is successful!

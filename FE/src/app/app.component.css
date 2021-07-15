@@ -56,7 +56,7 @@ h3 {
 .main-body {
   background-image: url('../assets/images/401643.jpg');
   background-repeat: no-repeat;
-  
+  background-size: cover;
 }
  
 /* modifications */

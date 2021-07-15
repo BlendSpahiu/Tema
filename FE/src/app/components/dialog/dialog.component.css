@@ -1,6 +1,8 @@
+
 .gamePrice {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 15px;
+  font-weight: 300;
 }
 .buyGameImage {
   display: block;
@@ -10,6 +12,7 @@
 .dialog {
   height: 650px;
   overflow-y: scroll;
+  border: none;
 }
 @media (hover: hover) {
   #creditcard {
@@ -68,6 +71,7 @@ body {
 }
 
 .button {
+  margin-left: 35%;
   border: none;
   outline: none;
   background-color: none;
@@ -93,4 +97,18 @@ body {
   bottom: 6px;
   right: 0.2rem;
   height: 140%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.form-control {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.form-group > label {
+  margin-left: 10%;
 }

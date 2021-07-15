@@ -7,7 +7,7 @@
     <div class="form-group">
         <label for="firstName">First Name *</label>
         <input required minlength="3" maxlength="10" ngModel name="firstName" type="text" #firstName="ngModel"
-            class="form-control" id="firstName" placeholder="Enter Your First Name">
+            class="form-control" id="firstName" >
         <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
             <div *ngIf="firstName.errors.required">First Name is required.</div>
             <div *ngIf="firstName.errors.minlength">First Name is minimum {{ firstName.errors.minlength.requiredLength
@@ -18,7 +18,7 @@
 
     <div class="form-group">
         <label for="lastName">Last Name *</label>
-        <input required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName" placeholder="Enter Your Last Name">
+        <input required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName">
         <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid" >
             Last Name is required.
         </div>
@@ -27,7 +27,7 @@
     <div class="form-group">
         <label for="cardNumber">Card Number *</label>
         <input type="text" required ngModel #cardNumber="ngModel" name="cardNumber" id="cardNumber" minlength="16" maxlength="16"
-            class="form-control" placeholder="Enter Your Card Number">
+            class="form-control" >
         <div class="alert alert-danger" *ngIf="cardNumber.touched && !cardNumber.valid">
             Card Number is required.
         </div>
@@ -36,7 +36,7 @@
     <div class="form-group">
         <label for="cardCV">Card CV *</label>
         <input type="text" required ngModel #cardCV="ngModel" name="cardCV" id="cardCV" minlength="3"
-            maxlength="3" class="form-control" placeholder="Enter Your Card CV">
+            maxlength="3" class="form-control" >
         <div class="alert alert-danger" *ngIf="cardCV.touched && !cardCV.valid">
             Card CV is required.
         </div>
