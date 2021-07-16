@@ -101,3 +101,9 @@
   mat-card-title {
     text-transform: uppercase;
   }
+.cardPrice {
+  float: right; 
+  margin-top: 15px;
+   margin-right: 12px;
+    font-size: 20px;
+}

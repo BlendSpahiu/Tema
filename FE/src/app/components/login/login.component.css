@@ -3,15 +3,14 @@
   height: 340px;
 } */
 .container {
-  padding-top: 50px;
+  padding-top: 0px;
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-
 .container .card {
   width: 600px;
-  height: 350px;
+  height: 340px;
   margin: auto;
 }
 
@@ -25,8 +24,13 @@
   background-color: rgb(51, 51, 51);
   color: white;
 }
+.form-group {
+  height: 50px;
+  margin-bottom: 8%;
+  z-index: 1;
+}
 .labels {
-  margin-top: 7%;
+  margin-top: 4%;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 300;
@@ -100,4 +104,46 @@ span a {
   font-size: 13px;
   font-weight: 300;
 }
+.signupPara {
+  color: white; 
+  font-size: 16px; 
+  font-weight: 300; 
+  text-transform: uppercase;
+  margin-top: 8%;
+}
+.signupLink {
+  text-decoration: none; 
+  font-size: 16px; 
+  font-weight: 300; 
+  text-transform: uppercase;
+}
+hr {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
 
+.notMember {
+  background-color: rgb(26, 26, 26);
+  min-height: 110px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.alert{
+  background-color: transparent;
+  color: red;
+  position: relative;
+  bottom: 43px;
+  left: 70%;
+  border: none;
+  width: 50px;
+}
+.loggedInSuccess {
+  width: 300px;
+  position: relative;
+  left: 22%;
+  top: 40%;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}

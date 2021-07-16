@@ -3,12 +3,16 @@
 } */
 .container .card {
   width: 600px;
-  height: 600px;
+  height: 432px;
   margin: auto;
 }
 
 .card {
   background-color: rgb(26, 26, 26);
+}
+.form-group {
+  height: 50px;
+  margin-bottom: 8%;
 }
 .form-control {
   width: 60%;
@@ -18,7 +22,7 @@
   color: white;
 }
 .labels {
-  margin-top: 6%;
+  margin-top: 4%;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 300;
@@ -103,5 +107,32 @@ span a {
 }
 hr {
   color: white;
-  margin-top: 8%;
+  margin: 0;
+}
+.loginPara {
+  color: white; 
+  font-size: 16px; 
+  margin-top: 8%; 
+  font-weight: 300; 
+  text-transform: uppercase;
+}
+.loginLink {
+  text-decoration: none; 
+  font-size: 16px; 
+  font-weight: 300; 
+  text-transform: uppercase;
+}
+.memberLoginRedirect {
+ background-color: rgb(26, 26, 26);
+ border-bottom-right-radius: 12px;
+ border-bottom-left-radius: 6px;
+ min-height: 150px;
+}
+.alert-danger {
+  background-color: transparent;
+  color: red;
+  position: relative;
+  left: 70%;
+  bottom: 32px;
+  width: 50px;
 }

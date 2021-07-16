@@ -27,7 +27,7 @@
           role="alert"
           *ngIf="f.submitted && username.invalid"
         >
-          Username is required!
+        <i class="material-icons" style="font-size:25px;color:red">error_outline</i>
         </div>
       </div>
       <div class="form-group">
@@ -46,14 +46,20 @@
           role="alert"
           *ngIf="f.submitted && password.invalid"
         >
-          <div *ngIf="password.errors.required">Password is required</div>
+          <div *ngIf="password.errors.required"><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
           <div *ngIf="password.errors.minlength">
             Password must be at least 6 characters
           </div>
         </div>
       </div>
+      
       <div class="form-group">
         <button class="button">Log In</button>
+      </div>
+      <hr>
+      <div class="notMember">
+        <p class="signupPara">Not a member?</p>
+        <a routerLink="/register" class="signupLink">Register!</a>
       </div>
       <div class="form-group">
         <div
@@ -64,10 +70,13 @@
           Login failed: {{ errorMessage }}
         </div>
       </div>
+      
     </form>
-
-    <div class="alert alert-success" *ngIf="isLoggedIn">
-      Logged in as {{ roles }}.
+    <div class="alert alert-success loggedInSuccess" *ngIf="isLoggedIn">
+      <p>Logged in as {{ roles }}.</p>
     </div>
+    
+    
+    
   </div>
 </div>

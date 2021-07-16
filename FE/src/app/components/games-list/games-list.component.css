@@ -2,10 +2,20 @@
     color: white;
     font-size: 16px;
     font-weight: 300;
-    text-transform: uppercase;
+}
+.list-group-item {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: 1px solid white;
+    font-weight: 300;
+}
+::placeholder{
+  color: white;
 }
 .form-control {
     text-transform: uppercase;
+    background-color: rgb(51, 51, 51);
+    color: white;
 }
 .button {
     display: inline-block;
@@ -67,4 +77,17 @@
     font-size: 0.7rem;
     color: #999;
     text-decoration: underline;
+  }
+
+  .removeButton {
+    margin: 0;
+  }
+
+  .m-3 {
+    left: -4%;
+  }
+
+  .editButton {
+    text-decoration: none;
+    left: 0%;
   }
