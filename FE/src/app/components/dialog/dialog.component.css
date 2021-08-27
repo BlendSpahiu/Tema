@@ -1,4 +1,6 @@
-
+input {
+  color: white;
+}
 .gamePrice {
   font-size: 22px;
   margin-top: 15px;
@@ -8,12 +10,22 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid white;
 }
 .dialog {
   height: 650px;
   overflow-y: scroll;
   border: none;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-weight: 300;
+  overflow-x: hidden;
+  border: 1px solid white;
+  border-radius: 6px;
+  scrollbar-width: thin;
+}
+.gameCardTitle {
+  margin-top: 10px;
 }
 @media (hover: hover) {
   #creditcard {
@@ -81,7 +93,7 @@ body {
   border-radius: 8px;
   letter-spacing: 0.7px;
   background-color: transparent;
-  color: black;
+  color: white;
   font-size: 20px;
   font-family: "Lato", sans-serif;
   cursor: pointer;
@@ -108,8 +120,22 @@ h1 {
 .form-control {
   width: 80%;
   margin-left: 10%;
+  background-color: rgb(43, 43, 43);
+  color: white;
 }
 
 .form-group > label {
   margin-left: 10%;
 }
+.alert {
+  background-color: transparent;
+  border: none;
+  color: red;
+  margin-bottom: 15px;
+  left: 6.5%;
+}
+.required {
+  position: relative;
+  bottom: 7px;
+}
+

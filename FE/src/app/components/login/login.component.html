@@ -48,7 +48,7 @@
         >
           <div *ngIf="password.errors.required"><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
           <div *ngIf="password.errors.minlength">
-            Password must be at least 6 characters
+            <i class="material-icons" style="font-size:25px;color:red">error_outline</i>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
       </div>
       <div class="form-group">
         <div
-          class="alert alert-danger"
+          class="alert alert-danger error"
           role="alert"
           *ngIf="f.submitted && isLoginFailed"
         >
@@ -73,7 +73,7 @@
       
     </form>
     <div class="alert alert-success loggedInSuccess" *ngIf="isLoggedIn">
-      <p>Logged in as {{ roles }}.</p>
+      <p>Logged in as {{ username }}.</p>
     </div>
     
     

@@ -4,8 +4,8 @@
       <input
         type="text"
         class="form-control"
-        placeholder="Search by title"
-        [(ngModel)]="title"
+        placeholder="Search "
+        [(ngModel)]="searchText"
       />
       <div class="input-group-append">
         <button
@@ -23,7 +23,7 @@
     <ul class="list-group">
       <li
         class="list-group-item"
-        *ngFor="let tutorial of games; let i = index"
+        *ngFor="let tutorial of games  | filter  : searchText; let i = index  "
         [class.active]="i == currentIndex"
         (click)="setActiveTutorial(tutorial, i)"
       >
@@ -37,7 +37,7 @@
   </div>
   <div class="col-md-6">
     <div *ngIf="currentGame">
-      <h4>Tutorial</h4>
+      <h4>Game</h4>
       <div>
         <label><strong>Title:</strong></label> {{ currentGame.title }}
       </div>

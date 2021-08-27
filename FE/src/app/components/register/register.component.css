@@ -3,7 +3,7 @@
 } */
 .container .card {
   width: 600px;
-  height: 432px;
+  height: 500px;
   margin: auto;
 }
 
@@ -126,7 +126,7 @@ hr {
  background-color: rgb(26, 26, 26);
  border-bottom-right-radius: 12px;
  border-bottom-left-radius: 6px;
- min-height: 150px;
+ min-height: 100px;
 }
 .alert-danger {
   background-color: transparent;
@@ -135,4 +135,23 @@ hr {
   left: 70%;
   bottom: 32px;
   width: 50px;
+}
+.alert-success {
+  background-color: transparent;
+  position: relative;
+  top: 190px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+.alert-warning {
+  background-color: rgb(26, 26, 26);
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
 }

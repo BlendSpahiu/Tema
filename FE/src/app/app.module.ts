@@ -22,6 +22,7 @@ import { MyOrdersComponent } from './components/my-orders/my-orders.component';
 import { ToastrModule } from 'ngx-toastr';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { ToastrModule } from 'ngx-toastr';
     DialogComponent,
     OrdersComponent,
     MyOrdersComponent,
+  
 
   ],
   imports: [

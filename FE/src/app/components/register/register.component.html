@@ -26,11 +26,11 @@
         />
         <div class="alert-danger" *ngIf="f.submitted && username.invalid">
           <div *ngIf="username.errors.required"><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
-          <div *ngIf="username.errors.minlength">
-            Username must be at least 3 characters
+          <div  *ngIf="username.errors.minlength">
+            <i class="material-icons" style="font-size:25px;color:red">error_outline</i>
           </div>
           <div *ngIf="username.errors.maxlength">
-            Username must be at most 20 characters
+            <i class="material-icons" style="font-size:25px;color:red">error_outline</i>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
         <div class="alert-danger" *ngIf="f.submitted && email.invalid">
           <div *ngIf="email.errors.required"><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
           <div *ngIf="email.errors.email">
-            Email must be a valid email address
+            <i class="material-icons" style="font-size:25px;color:red">error_outline</i>
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@
           minlength="6"
           #password="ngModel"
         />
-        <div class="alert-danger" *ngIf="f.submitted && password.invalid">
+        <div class="alert-danger " *ngIf="f.submitted && password.invalid">
           <div *ngIf="password.errors.required"><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
-          <div *ngIf="password.errors.minlength">
-            Password must be at least 6 characters
+          <div  *ngIf="password.errors.minlength">
+            <i class="material-icons" style="font-size:25px;color:red">error_outline</i>
           </div>
         </div>
       </div>
@@ -79,16 +79,17 @@
       </div>
 
     <hr>
-    </form>
     <div class="memberLoginRedirect">
       <p class="loginPara" style="color: white;">Already a member?</p>
     <a class="loginLink" routerLink="/login">Log in!</a>
     </div>
+    </form>
+    
     
   
 
     <div class="alert alert-success" *ngIf="isSuccessful">
-      Your registration is successful!
+      <p class="registerSuccess">Registered Successfully!</p>
     </div>
   </div>
 </div>

@@ -7,8 +7,8 @@ import { GamesService } from 'src/app/services/games.service';
   styleUrls: ['./games-list.component.css']
 })
 export class GamesListComponent implements OnInit {
-
-  games: any;
+  searchText = '';
+  games: any[];
   currentGame = null;
   currentIndex = -1;
   title = '';

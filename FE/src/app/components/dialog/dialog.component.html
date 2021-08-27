@@ -1,5 +1,5 @@
 <div class="container dialog">
-<h1 align="center" bold>{{gameDetails.title}}</h1>
+<h1 class="gameCardTitle" align="center" bold>{{gameDetails.title}}</h1>
 <img class="buyGameImage" src="{{gameDetails.filePath}}">
 <p class="gamePrice" align="center">{{gameDetails.price | currency}}</p>
 <form #contactForm="ngForm">
@@ -9,18 +9,18 @@
         <input required minlength="3" maxlength="10" ngModel name="firstName" type="text" #firstName="ngModel"
             class="form-control" id="firstName" >
         <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
-            <div *ngIf="firstName.errors.required">First Name is required.</div>
-            <div *ngIf="firstName.errors.minlength">First Name is minimum {{ firstName.errors.minlength.requiredLength
-                }} character.</div>
-            <div *ngIf="firstName.errors.maxlength">First Name is maximum 10 character.</div>
+            <div *ngIf="firstName.errors.required"><span class="required">First Name is required.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
+            <div *ngIf="firstName.errors.minlength"><span class="required">First Name is minimum {{ firstName.errors.minlength.requiredLength
+                }} character.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
+            <div *ngIf="firstName.errors.maxlength"><span class="required">First Name is maximum 10 character.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i></div>
         </div>
     </div>
 
-    <div class="form-group">
+    <div appearance="outline" class="form-group">
         <label for="lastName">Last Name *</label>
-        <input required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName">
+        <input  required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName">
         <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid" >
-            Last Name is required.
+            <span class="required">Last name is required.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i>
         </div>
     </div>
 
@@ -29,7 +29,7 @@
         <input type="text" required ngModel #cardNumber="ngModel" name="cardNumber" id="cardNumber" minlength="16" maxlength="16"
             class="form-control" >
         <div class="alert alert-danger" *ngIf="cardNumber.touched && !cardNumber.valid">
-            Card Number is required.
+            <span class="required">Number is required.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
         <input type="text" required ngModel #cardCV="ngModel" name="cardCV" id="cardCV" minlength="3"
             maxlength="3" class="form-control" >
         <div class="alert alert-danger" *ngIf="cardCV.touched && !cardCV.valid">
-            Card CV is required.
+            <span class="required">CV is required.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
         <input type="month" required ngModel #cardExpirationDate="ngModel" name="cardExpirationDate" id="cardExpirationDate"
             class="form-control">
         <div class="alert alert-danger" *ngIf="cardCV.touched && !cardCV.valid">
-            Expiration date is required.
+            <span class="required">Expiration date is required.</span><i class="material-icons" style="font-size:25px;color:red">error_outline</i>
         </div>
     </div>
 
@@ -81,7 +81,7 @@
         <path d="M147.87,541.93V320.84c-.05-13.2,8.25-21.51,21.62-24.27a42.71,42.71,0,0,1,7.14-1.32l-29.36-.63a67.77,67.77,0,0,0-9.13.45c-13.37,2.75-20.32,12.57-20.27,25.77l.38,221.24c-1.57,15.44,8.15,27.08,25.34,26.1l33-.19c-15.9,0-28.78-10.58-28.76-25.93Z" fill="#7b8f91" />
         <path d="M148.16,343.22a6,6,0,0,0-6,6v92a6,6,0,0,0,12,0v-92A6,6,0,0,0,148.16,343.22Z" fill="#323c44" />
       </g>
-  
+
     </svg>
   </button>
 </div>

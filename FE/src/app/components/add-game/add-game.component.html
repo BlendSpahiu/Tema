@@ -1,13 +1,13 @@
 <div style="width: 500px; margin: auto; background-color: rgb(32, 32, 32); border-radius: 12px;" fxLayout="row wrap" >
   <div class="submit-form" >
     <div *ngIf="!submitted" >
-      <div class="form-group col-xs-12 col-s-12" >
-        <label for="title">Title</label>
+      <div    appearance="outline" >
+        <label style="color: white">Title</label>
         <input
-          type="text"
+          [required]="true"
           class="form-control"
+          type="text"
           id="title"
-          required
           [(ngModel)]="_game.title"
           name="title"
         />
@@ -52,13 +52,13 @@
         <div class="alert alert-success" role="alert" *ngIf="isUploaded">
             Image Uploaded Succesfuly
         </div>
-        <button aria-colspan="addGameButton" (click)="saveTutorial()" class="button">Add Game</button>
+        <button [disabled]="_game.title.length === 0" aria-colspan="addGameButton" (click)="saveTutorial()" class="button">Add Game</button>
       </form>
-      
+
     </div>
 
     <div class="addedGame" *ngIf="submitted">
-      <h4>You submitted successfully!</h4>
+      <h4>Added successfully!</h4>
       <button class="button" (click)="newTutorial()">Add</button>
     </div>
   </div>

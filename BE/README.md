@@ -1,29 +1,14 @@
-# Spring Boot MongoDB CRUD example - Restful CRUD API
+In order to run this CRUD application clone the project with the following github link: git@github.com:BlendSpahiu/Tema.git
 
-For more detail, please visit:
-> [Spring Boot with MongoDB CRUD example using Spring Data](https://bezkoder.com/spring-boot-mongodb-crud/)
+The database used in the project is local, so in order for all the data that's in it to appear you have to either download the database i used or just manually add them.
 
-More Practice:
-> [Spring Boot MongoDB Pagination & Filter example](https://bezkoder.com/spring-boot-mongodb-pagination/)
+To import the database file, use MongoDBCompass. Create a new collection and a import the JSON file.
 
-Exception Handling:
-> [Spring Boot @ControllerAdvice & @ExceptionHandler example](https://bezkoder.com/spring-boot-controlleradvice-exceptionhandler/)
+Attached will also be the photos of the products which are stored locally, and in order to access them, go to this file and this line of code: 
+C:\Users\(Your User)\(your path)\Tema\BE\sec\main\java\com\bezkoder\spring\data\mongodb\service\imageService.java - and modifiy this line of code: 
 
-> [@RestControllerAdvice example in Spring Boot](https://bezkoder.com/spring-boot-restcontrolleradvice/)
+	public final String storageDirectoryPath = "C\\Users\\(your user)\\(file path)\\photos
 
-Security:
-> [Spring Boot: JWT Authentication & Authorization with MongoDB](https://bezkoder.com/spring-boot-jwt-auth-mongodb/)
+To log in as a moderator, log in with Username: moderator, Password: 12345678
 
-Fullstack:
-> [Angular 10 + Spring Boot + MongoDB](https://bezkoder.com/angular-10-spring-boot-mongodb/)
 
-> [Angular 11 + Spring Boot + MongoDB](https://bezkoder.com/angular-11-spring-boot-mongodb/)
-
-> [Vue.js + Spring Boot + MongoDB](https://bezkoder.com/spring-boot-vue-mongodb/)
-
-> [React + Spring Boot + MongoDB](https://bezkoder.com/react-spring-boot-mongodb/)
-
-## Run Spring Boot application
-```
-mvn spring-boot:run
-```

@@ -147,3 +147,8 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
+.error {
+  width: 250px;
+  position: relative;
+  left: 27%;
+}

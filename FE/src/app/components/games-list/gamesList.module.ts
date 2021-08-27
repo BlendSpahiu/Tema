@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {GamesListComponent} from "./games-list.component";
 import {GamesDetailsComponent} from "../games-details/games-details.component";
 import {FormsModule} from "@angular/forms";
-
+import { FilterPipe } from '../..//services/filter.pipe';
 
 const routes: Routes = [
   {
@@ -14,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GamesListComponent],
+  declarations: [GamesListComponent, FilterPipe],
   imports: [CommonModule, RouterModule.forChild(routes), FormsModule]
 
 })
